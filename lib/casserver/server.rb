@@ -499,7 +499,7 @@ module CASServer
     end
 
     get /^#{uri_path}\/?$/ do
-      redirect "#{config['uri_path']}/login", 303
+      redirect "#{config['base_url']}#{config['uri_path']}/login", 303
     end
 
 
